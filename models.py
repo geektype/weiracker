@@ -21,7 +21,7 @@ class Data:
                 args_dict[item] = items_dict[item]
                 del items_dict[item]
         if items_dict != {}:
-            for item in items_dict.keys():
+            for item in items_dict:
                 print(f"[WARN] '{item}' does not exist in file HEADER. Skipping write")  # noqa: E501
 
         self._write(args_dict)
@@ -50,4 +50,4 @@ class Data:
 
     @property
     def data(self):
-        return getattr(self, '_data')
+        return self._data
