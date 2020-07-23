@@ -1,2 +1,2 @@
 # Fitness Metric Tracker
-Tracks varirous metrics related to fitness genrates analytical insights
+Tracks varirous metrics related to fitness and genrates analytical insights
