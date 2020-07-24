@@ -47,6 +47,7 @@ class Data:
         with open(self._filename, mode='a') as csv_file:
             writer = csv.DictWriter(csv_file, fieldnames=labels)
             writer.writerow(data_dict)
+        self._data, self.line_count = self._read()
 
     @property
     def data(self):
